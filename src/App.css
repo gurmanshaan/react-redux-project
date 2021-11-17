@@ -261,11 +261,10 @@ button:hover {
 
   .image {
     height: 250px;
-    
   }
 }
-@media (max-width: 576px) {
 
+@media (max-width: 576px) {
   .left {
     width: 100%;
   }
