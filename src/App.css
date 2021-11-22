@@ -18,10 +18,42 @@
 
 .listing {
   display: flex;
-  margin-top: 80px;
+  margin-top: 100px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.pagebtn {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px;
+  background-color: white;
+  color: black;
+}
+
+.pagebtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.pagebtn:focus {
+  background-color: black;
+  color: white;
 }
 
 .product {
@@ -144,7 +176,7 @@
   height: 500px;
   padding: 20px;
   margin: auto;
-  width: 100%;
+  width: 90%;
 }
 
 .pr {
@@ -170,6 +202,9 @@
 
 .description {
   padding: 10px;
+}
+
+.description p {
   font-size: 1.2rem;
   color: #777;
   margin: 0 0 1em;
@@ -192,11 +227,11 @@ button {
   padding: 14px 40px;
   background-color: white;
   color: black;
-  border: 2px solid #4caf50;
+  border: 2px solid black;
 }
 
 button:hover {
-  background-color: #4caf50;
+  background-color: black;
   color: white;
 }
 
@@ -246,6 +281,10 @@ button:hover {
 
   button {
     padding: 20px;
+    font-size: 1.2rem;
+  }
+
+  .pagebtn {
     font-size: 1.2rem;
   }
 
@@ -313,5 +352,9 @@ button:hover {
   button {
     padding: 5px;
     font-size: 1rem;
+  }
+  .pagebtn {
+    padding: 5px;
+    font-size: 1.2rem;
   }
 }

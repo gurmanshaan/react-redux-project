@@ -1,11 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import {Link } from "react-router-dom";
+import {PRODUCT_PER_PAGE} from "../utils/constants";
 
-const Product = () => {
+const Product = ({page}) => {
   const products = useSelector((state) => state.allProducts.products);
-  const renderList = products.map((product) => {
+  const startIndex = ( page - 1 ) * PRODUCT_PER_PAGE;
+  const selectedProducts = products.slice(startIndex, startIndex + PRODUCT_PER_PAGE);
+
+  const renderList = selectedProducts.map((product) => {
     const { id, title, image, price, category } = product;
+    window.scrollTo(0, 0);
     return (
       <div className="product" key={id}>
         <Link to={`/product/${id}`}>

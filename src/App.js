@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import ProductListing from './components/ProductListing';
 import ProductDetail from './components/ProductDetail'
 
-
 function App() {
   return (
     <div className="App">
